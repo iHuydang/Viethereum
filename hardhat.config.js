@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "";
 const INFURA_API_KEY = process.env.INFURA_API_KEY || "ae5d24b89c9d40518512cf4d5d122837";
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "";
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "Z2I74PM9TS94NU68S222E324GE67N6UX3G";
 
 module.exports = {
   solidity: {
