@@ -1,0 +1,41 @@
+*.iml
+*.ipr
+*.iws
+.idea
+.gradle
+build/
+robolib/
+bitcoin-datadir/
+logs/
+copied-artifacts/
+.resourceCache/
+omnij-*/out/
+out/
+
+node_modules
+.env
+.env.local
+.env.production
+coverage
+coverage.json
+typechain
+typechain-types
+cache
+artifacts
+
+# QUAN TRỌNG: Không upload private key!
+VIETHEREUM_TOKEN_BACKUP.txt
+*.backup.txt
+private_key.txt
+
+# Hardhat files
+cache/
+artifacts/
+
+# Logs
+*.log
+logs/
+
+# Lock files
+package-lock.json
+yarn.lock

@@ -1,0 +1,28 @@
+{
+  "name": "viethereum-token",
+  "version": "1.0.0",
+  "description": "Viethereum (VIΞTH) Token Smart Contract",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run contracts/deploy.js --network localhost",
+    "node": "hardhat node"
+  },
+  "keywords": [
+    "ethereum",
+    "viethereum",
+    "token",
+    "ERC20"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.26.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  }
+}
