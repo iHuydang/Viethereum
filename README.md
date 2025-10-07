@@ -77,7 +77,3 @@ VIETH phát hành **mainnet 20/11**, hướng tới **stablecoin neo VND**:
 - Dễ trải nghiệm blockchain và stablecoin  
 
 VIETH tập trung vào **ổn định, minh bạch và dễ kiểm tra**, học hỏi từ USDT nhưng phục vụ trực tiếp **nhu cầu người Việt**, đồng thời tạo niềm tin và lựa chọn an toàn cho cộng đồng qua trải nghiệm thực tế, rút kinh nghiệm từ các dự án thiếu minh bạch như Antex.
-
----
-
-**💡 Ghi chú:** README có thể kết hợp **infographic/flowchart trực quan** từ token chuẩn → stablecoin → ứng dụng thực tế, để minh họa rõ ràng hơn cho người đọc trên GitHub.
