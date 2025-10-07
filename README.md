@@ -1,123 +1,83 @@
-# Viethereum Token (VIΞTH)
+# Viethereum (VIΞTH) – Tiền Điện Tử Minh Bạch 🪙
 
-A fully-featured ERC-20 token built on Ethereum with advanced functionalities.
+Viethereum (VIΞTH) là một token kỹ thuật số chuẩn **ERC-20** phát triển trên Ethereum, với thiết kế **minh bạch, an toàn và dễ kiểm tra**. Ban đầu, VIΞTH là một token chuẩn, cho phép người dùng thử nghiệm các tính năng cơ bản: **gửi, nhận, chuyển đổi sang Bitcoin hoặc các loại crypto khác, tạo pool thanh khoản trên testnet**.  
 
-## 🎯 Token Information
+Mọi thao tác đều thực hiện thông qua **smart contract** (Hợp Đồng Thông Minh – Mã Nguồn Tiền Điện tử) với cấu trúc lập trình tương tự **USDT Tether**, đảm bảo tự động, minh bạch, không cần trung gian, giúp người dùng yên tâm về **an toàn tài sản**.  
 
-- **Name**: Viethereum
-- **Symbol**: VIΞTH
-- **Standard**: ERC-20
-- **Initial Supply**: 1,000,000,000 VIΞTH
-- **Decimals**: 18
-- **Network**: Sepolia Testnet (Chain ID: 11155111)
+Mục tiêu giai đoạn đầu là tạo **token minh bạch**, học cách vận hành như USDT, hướng tới thị trường Việt Nam trong vùng xám pháp lý.  
 
-## 📜 Deployed Contract
-
-**Sepolia Testnet:**
-- Contract Address: `0x627B60304eb80a5Bc4b38a8C2A8194E453681ABD`
-- [View on Etherscan](https://sepolia.etherscan.io/address/0x627B60304eb80a5Bc4b38a8C2A8194E453681ABD)
-
-## ✨ Features
-
-- ✅ **Pausable**: Contract owner can pause/unpause transfers
-- ✅ **BlackList**: Ability to blacklist addresses
-- ✅ **Upgradeable**: Can be upgraded to a new contract
-- ✅ **Fee System**: Optional transaction fees (configurable)
-- ✅ **Issue/Redeem**: Owner can issue or redeem tokens
-- ✅ **ERC-20 Compatible**: Full ERC-20 standard implementation
-
-## 🛠 Technology Stack
-
-- Solidity 0.8.20
-- Hardhat
-- Node.js
-- Express.js
-
-## 📦 Installation
-
-```bash
-# Install dependencies
-npm install
-
-# Compile contracts
-npx hardhat compile
-
-# Run tests (if available)
-npx hardhat test
-```
-
-## 🚀 Deployment
-
-### Deploy to Sepolia Testnet
-
-1. Create a `.env` file:
-```
-PRIVATE_KEY=your_private_key_here
-```
-
-2. Make sure you have Sepolia ETH in your wallet (get from faucet)
-
-3. Deploy:
-```bash
-npx hardhat run contracts/deploy.js --network sepolia
-```
-
-### Deploy to Mainnet
-
-```bash
-npx hardhat run contracts/deploy.js --network mainnet
-```
-
-## 📝 Contract Functions
-
-### Owner Functions
-- `transferOwnership(address newOwner)` - Transfer ownership
-- `pause()` / `unpause()` - Pause/unpause transfers
-- `addBlackList(address user)` / `removeBlackList(address user)` - Manage blacklist
-- `destroyBlackFunds(address user)` - Destroy tokens from blacklisted address
-- `issue(uint amount)` - Issue new tokens
-- `redeem(uint amount)` - Redeem (burn) tokens
-- `setParams(uint basisPoints, uint maxFee)` - Set fee parameters
-- `deprecate(address newAddress)` - Upgrade to new contract
-
-### Standard ERC-20 Functions
-- `transfer(address to, uint value)`
-- `transferFrom(address from, address to, uint value)`
-- `approve(address spender, uint value)`
-- `balanceOf(address owner)`
-- `totalSupply()`
-- `allowance(address owner, address spender)`
-
-## 🔒 Security
-
-- ⚠️ **NEVER** commit your `.env` file or private keys to GitHub
-- ⚠️ Store private keys securely in a password manager or hardware wallet
-- ⚠️ Backup your private keys in multiple secure locations
-
-## 📄 License
-
-MIT License
-
-## 🌐 Website
-
-The project includes a web interface for viewing token information and contract details.
-
-```bash
-# Start the web server
-node server.js
-```
-
-Then visit `http://localhost:5000`
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-## 📧 Contact
-
-For questions or support, please open an issue in this repository.
+**Ngày dự kiến mainnet:** 20/11
 
 ---
 
-**Disclaimer**: This is a testnet deployment. Always audit smart contracts before deploying to mainnet with real funds.
-# VI-T
+## TẦM NHÌN: STABLECOIN GẮN VND
+
+Trong tương lai, khi thử nghiệm hoàn thiện, đạt vốn hóa lưu thông đủ, và pháp luật Việt Nam chấp nhận tiền điện tử, VIΞTH sẽ tiến hóa thành **stablecoin neo giá với VND**:  
+
+- **Tỷ lệ neo giá:** 1 VIETH = 10.000 VND  
+- **Mục tiêu:** bảo vệ giá trị tài sản, chống lạm phát, thanh toán nhanh, phí thấp  
+- **Kiểm toán độc lập:** báo cáo dự trữ công khai, xác minh bên thứ ba uy tín  
+- **Ứng dụng:** gửi/nhận, thanh toán, tiết kiệm, giao dịch quốc tế  
+
+💡 **Điểm khác biệt so với USDT:** neo VND, phục vụ người Việt; triển khai trên Ethereum mainnet, smart contract công khai, kiểm toán định kỳ, giảm rủi ro so với dự án nội địa không minh bạch.
+
+---
+
+## LỢI ÍCH CHO NGƯỜI DÙNG
+
+- **An toàn & minh bạch:** smart contract công khai, kiểm toán định kỳ, giao dịch blockchain  
+- **Ổn định & bảo vệ tài sản:** gắn với VND trong tương lai, hạn chế biến động  
+- **Dễ trải nghiệm:** thử nghiệm testnet, swap, tạo pool liquidity, học smart contract mà không cần kiến thức chuyên sâu  
+
+---
+
+## SO SÁNH VỚI CÁC DỰ ÁN KHÁC
+
+| Tiêu chí      | VIETH                          | USDT                   | Antex               |
+|---------------|--------------------------------|-----------------------|-------------------|
+| Chuẩn token   | ERC-20                         | ERC-20                | Không minh bạch   |
+| Neo giá       | VND (tương lai)                | USD                   | Không ổn định     |
+| Kiểm toán     | Định kỳ, bên thứ ba            | Báo cáo định kỳ       | Không có          |
+| Minh bạch     | Smart contract công khai       | Mã nguồn công khai    | Mờ ám, thay đổi tên|
+| Ứng dụng      | Thanh toán, tiết kiệm, giao dịch | Thanh toán, giao dịch | Chưa triển khai ổn định |
+
+> Là lập trình viên không có **hậu thuẫn tài chính mạnh**, tôi tin rằng **minh bạch, smart contract tốt và cơ chế như Tether** sẽ tạo niềm tin. Qua dự án không minh bạch như **Antex** ([tham khảo vụ Antex lừa đảo](https://www.coindesk.com/markets/2024/05/antex-scam-crypto/)), chúng tôi học được rằng **lòng tin và kiểm toán độc lập là yếu tố sống còn**. VIETH ra đời để bảo vệ giá trị tài sản, tạo lựa chọn an toàn, tránh rủi ro lừa đảo, và xây dựng cộng đồng tin tưởng.
+
+---
+
+## THÔNG SỐ KỸ THUẬT
+
+- **Tên hợp đồng:** ViethereumToken  
+- **Compiler:** v0.8.20+commit.a1b79de6  
+- **Tối ưu hóa:** Có (200 lần chạy)  
+- **Giấy phép:** MIT  
+- **Tính năng:** ERC-20, Ownable, Pausable, Blacklist, Mint/Burn, nâng cấp  
+- **Biểu tượng:** VIΞTH  
+- **Số thập phân:** 18  
+- **Tổng cung ban đầu:** 1.000.000.000 VIΞTH  
+
+---
+
+## LIÊN KẾT THAM KHẢO
+
+- **Testnet Sepolia Etherscan:** ViethereumToken  
+- **Hướng dẫn Uniswap v3:** https://docs.uniswap.org  
+- **Tỷ giá USDT ↔ VND tham khảo:** https://www.exchangerates.org.uk/USD-VND-exchange-rate-history.html  
+- **Vụ Antex lừa đảo:** https://www.coindesk.com/markets/2024/05/antex-scam-crypto/
+
+---
+
+## KẾT LUẬN
+
+VIETH phát hành **mainnet 20/11**, hướng tới **stablecoin neo VND**:  
+
+- Bảo vệ tài sản trước lạm phát  
+- Thanh toán nhanh, phí thấp  
+- Giảm rủi ro nhờ **smart contract minh bạch** và **kiểm toán độc lập**  
+- Dễ trải nghiệm blockchain và stablecoin  
+
+VIETH tập trung vào **ổn định, minh bạch và dễ kiểm tra**, học hỏi từ USDT nhưng phục vụ trực tiếp **nhu cầu người Việt**, đồng thời tạo niềm tin và lựa chọn an toàn cho cộng đồng qua trải nghiệm thực tế, rút kinh nghiệm từ các dự án thiếu minh bạch như Antex.
+
+---
+
+**💡 Ghi chú:** README có thể kết hợp **infographic/flowchart trực quan** từ token chuẩn → stablecoin → ứng dụng thực tế, để minh họa rõ ràng hơn cho người đọc trên GitHub.
