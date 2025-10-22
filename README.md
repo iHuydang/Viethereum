@@ -67,7 +67,7 @@ Trong tương lai, khi thử nghiệm hoàn thiện, đạt vốn hóa lưu thô
 
 ---
 
-## KẾT LUẬN
+##
 
 VIETH phát hành **mainnet 20/11**, hướng tới **stablecoin neo VND**:  
 
